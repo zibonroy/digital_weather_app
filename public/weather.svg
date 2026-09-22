@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#2563eb"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="64" height="64" rx="16" fill="url(#sky)"/>
+
+  <!-- Sun -->
+  <circle cx="39" cy="25" r="11" fill="#facc15"/>
+
+  <g stroke="#facc15" stroke-width="3" stroke-linecap="round">
+    <path d="M39 8v5"/>
+    <path d="M39 37v5"/>
+    <path d="M22 25h5"/>
+    <path d="M51 25h5"/>
+    <path d="m27 13 4 4"/>
+    <path d="m47 33 4 4"/>
+  </g>
+
+  <!-- Cloud -->
+  <path
+    d="M17 47h29a9 9 0 0 0 0-18
+       13 13 0 0 0-24-2
+       10 10 0 0 0-5 20Z"
+    fill="#fff"
+  />
+</svg>

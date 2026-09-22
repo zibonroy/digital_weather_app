@@ -1,0 +1,39 @@
+.weather-scene { position: absolute; inset: 0; overflow: hidden; pointer-events: none; }
+
+.weather-sun { animation: weatherSunPulse 3s ease-in-out infinite; filter: drop-shadow(0 0 18px rgba(255, 210, 60, .7)); }
+.weather-cloud { animation: weatherCloudFloat 4s ease-in-out infinite; }
+.weather-rain-drop { position: absolute; top: -30px; width: 2px; height: 34px; border-radius: 999px; background: rgba(191, 219, 254, .75); transform: rotate(14deg); animation: weatherRainFall linear infinite; }
+.weather-snow-flake { position: absolute; top: -20px; color: rgba(255,255,255,.9); animation: weatherSnowFall linear infinite; }
+.weather-lightning { animation: weatherLightning 4s linear infinite; }
+.weather-scene-sheen { animation: weatherSheen 5s ease-in-out infinite; }
+
+@keyframes weatherSunPulse {
+  0%, 100% { transform: scale(1) rotate(0deg); }
+  50% { transform: scale(1.08) rotate(5deg); }
+}
+@keyframes weatherCloudFloat {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(12px); }
+}
+@keyframes weatherRainFall {
+  0% { transform: translate3d(0, -40px, 0) rotate(14deg); opacity: 0; }
+  15% { opacity: 1; }
+  100% { transform: translate3d(-45px, 560px, 0) rotate(14deg); opacity: .15; }
+}
+@keyframes weatherSnowFall {
+  0% { transform: translate3d(0, -30px, 0) rotate(0deg); opacity: 0; }
+  15% { opacity: 1; }
+  100% { transform: translate3d(70px, 560px, 0) rotate(360deg); opacity: .2; }
+}
+@keyframes weatherLightning {
+  0%, 44%, 48%, 52%, 100% { opacity: .2; }
+  45%, 49% { opacity: 1; }
+}
+@keyframes weatherSheen {
+  0%, 100% { transform: translateX(-120%); opacity: 0; }
+  40% { opacity: .18; }
+  65% { transform: translateX(120%); opacity: 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .weather-sun, .weather-cloud, .weather-rain-drop, .weather-snow-flake, .weather-lightning, .weather-scene-sheen { animation: none; }
+}
