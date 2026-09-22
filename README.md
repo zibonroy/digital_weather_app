@@ -1,16 +1,94 @@
-# React + Vite
+# 🌤️ Weather App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and responsive weather application built with **React.js** and **Tailwind CSS**.
+The application provides current weather information for searched locations with a clean, intuitive, and mobile-friendly interface.
 
-Currently, two official plugins are available:
+## ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+* 🌍 Search weather by city/location
+* 📍 Get weather Details using the user's location
+* 🌡️ Display current temperature
+* 🤔 Show "Feels Like" temperature
+* 💧 Display humidity
+* 💨 Show wind speed
+* 🌤️ Dynamic weather conditions and icons
+* 🔄 Real-time weather data fetch a weather API
+* 📱 Fully responsive design in Mobile, tablet , Desktop
+* 🎨 Modern and clean UI
+* ⚡ Fast and smooth user experience
+* ❌ User-friendly error handling for invalid locations or API errors
 
-## React Compiler
+## 🛠️ Technologies Used
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* **React.js** — Frontend library
+* **JavaScript (ES6+)** — Application logic
+* **Tailwind CSS** — Styling and responsive design
+* **Lucide React** — UI icons
+* **React Router** — Client-side navigation
+* **Weather API** — Weather data fetching
+* **Vite** — Development and production build tool
 
-## Expanding the ESLint configuration
+## 📊 Weather Information
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+The application displays useful weather details including:
+
+| Information | Unit |
+| ----------- | ---- |
+| Temperature | °C   |
+| Feels Like  | °C   |
+| Humidity    | %    |
+| Wind Speed  | km/h |
+
+## 🎨 UI & Design
+
+The interface is designed with a focus on:
+
+* Clean and minimal layout
+* Responsive cards and components
+* Clear weather information hierarchy
+* Smooth interactions
+* Mobile, tablet, and desktop support
+* Accessible and recognizable icons
+
+## 📁 Project Structure
+
+```text
+weather-app/
+├── public/
+├── src/
+│   ├── assets/
+│   ├── components/
+│   ├── pages/
+│   ├── services/
+│   ├── template/
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── index.css
+├── .gitignore
+├── index.html
+├── package.json
+├── vite.config.js
+└── README.md
+```
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+Make sure you have:
+
+* Node.js installed
+* npm installed
+* lucide-react
+* react-router-dom
+
+
+## 🔍 How It Works
+
+1. Search for a city or location.
+2. The application requests weather data from the weather API.
+3. The received data is processed and displayed in the interface.
+4. Weather conditions are represented using appropriate icons and information cards.
+5. The interface automatically adapts to different screen sizes.
+
+---
